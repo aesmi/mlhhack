@@ -3,7 +3,7 @@ import discord
 import random
 # make a function that pulls the token, because this github is public
 def read_token() -> str:
-    with open(".gitignore.txt", "r") as f:
+    with open("key.gitignore/token.txt", "r") as f:
         lines = f.readlines()
         return lines[0].strip()
 
