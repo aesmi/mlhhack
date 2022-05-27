@@ -1,0 +1,19 @@
+html, body {
+    background: burlywood;
+}
+
+#interface {
+    background-color: white;
+}
+
+#mode-btn {
+    float: right;
+}
+
+.visible {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}

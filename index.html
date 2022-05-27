@@ -5,31 +5,42 @@
     <title>Web app name</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/66f14e5dd7.js" crossorigin="anonymous"></script>
+    <script src="ui-settings.js"></script>
     <link rel = "stylesheet" href= "style.css">
 </head>
 
 <!--Body-->
 <body>
+    <div id = "top">
+        <i class="fa-solid fa-suitcase" id = "logo"></i>
+        <button id = "mode-btn"><i class="fas fa-sun" id = "b-icon"></i></button>
+    </div>
+
     <div id = "interface">
-        <div>Logo</div>
-
-        <button id = "color-mode">Change color</button>
-
-        <div id = "page1">
+        <div id = "page1" class = "visible">
             <h1>Check In</h1>
+            <span id = "error"></span>
 
-            <select name="country-code" id="country-code">
-            </select>
+            <div id = "search-box">
+                <select name="country-code" id="country-code">
+                    <option id = "code" data-countryCode="US" value="1" Selected>+1</option>       
+                </select>
 
-            <input type = "text" placeholder = "Enter your phone number">
-
-            <button>Enter</button>
+                <input id = "num-input" type = "text" placeholder = "Enter phone number">
+            </div>
+            
+            <button id = "enter-btn" onclick = "getNumber()">Enter</button>
 
         </div>
 
-        <div id = "page2">
+        <div id = "page2" class = "hidden">
             <h1>Luggage Status</h1> <!--Displays luggage and current status-->
+            <!--Traveller info-->
+
+            <!--Luggage-->
         </div>
     </div>
 </body>
+
 </html>
