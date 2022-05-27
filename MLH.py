@@ -45,13 +45,13 @@ async def sus(ctx):
 #hello command
 @client.command(name = "hello")
 async def hello(ctx):
-    await ctx.send(f'Hello, ' + ctx.message.author.display_name + '!')
+    await ctx.send(f'Hello,{ctx.message.author.display_name}!')
     return
 
 #bye command
 @client.command(name = "bye")
 async def bye(ctx):
-    await ctx.send(f'See you later, ' + ctx.message.author.display_name + '!')
+    await ctx.send(f'See you later,{ctx.message.author.display_name}!')
     return
 
 
@@ -59,7 +59,7 @@ async def bye(ctx):
 @client.command(name = "random")
 async def random(ctx):
     randNum = r.randrange(0, 1000)
-    res = 'This is your random number: ' + str(randNum)
+    res = (f'This is your random number:{randNum}')
     await ctx.send(res)
     return
 
