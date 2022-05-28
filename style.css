@@ -1,9 +1,9 @@
 html, body {
-    background: rgb(25, 44, 105);
+    background: #4D4C7D;
 }
 
 #interface {
-    background-color: white;
+    background-color: rgb(249, 251, 253);
 }
 
 /*
@@ -30,13 +30,31 @@ html, body {
     margin-top: 14vw;
     align-items: center;
     height: 75vh;
+    border-radius: 10px;
 }
 
 
-h1 {
+#page1 h1 {
     text-align: center;
     padding-top: 10vh;
+    font-size: 36px;
+    font-family: "Segoe UI";
+}
+
+#page1 p {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 18px;
+    font-family: Helvetica;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#page2 h1 {
+    text-align: center;
+    padding-top: 3vh;
     font-size: 38px;
+    font-family: "Segoe UI";
 }
 
 #page1 {
@@ -51,12 +69,16 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    margin-top: 25vh;
+    margin-top: 15vh;
     font-size: 18px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 15px;
     padding-right: 15px;
+    font-family: "Segoe UI";
+    border-radius: 1px;
+    background-color: white;
+    opacity: 95%;
 }
 
 #search-box {
@@ -71,6 +93,7 @@ h1 {
     height: 40px;
     margin-left: 10px;
     width: 52vw;
+    border: 1px solid black;
 }
 
 ::placeholder {
@@ -80,14 +103,76 @@ h1 {
 select {
     width: 50px;
     font-size: 20px;
+    border: 1px solid black;
 }
 
 optgroup {
     font-size: 20px;
 }
 
+
+
 input[type="text"]
 {
-    font-size:22px;
+    font-size: 20px;
     left: 10px;
+}
+
+#prof img {
+    border-radius: 12vh;
+    width:auto;
+    height: 11vh;
+}
+
+#prof {
+    display: flex;
+}
+
+#profile {
+    padding-top: 5px;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+#info {
+    padding-left: 30px;
+    font-family: Helvetica;
+    line-height: 1.6;
+    font-size: 17px;
+}
+
+h2 {
+    font-family: "Segoe UI";
+}
+
+#hl {
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: black;
+}
+
+#luggage {
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.l-info {
+    display: flex;
+    padding-bottom: 5px;
+}
+
+.l-info i {
+    font-size: 48px;
+    padding-top: 10px;
+}
+
+.l-info {
+    font-family: Helvetica;
+}
+
+#text {
+    font-size: 16px;
+    line-height: 1.4;
+    padding-left: 20px;
 }
