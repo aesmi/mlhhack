@@ -9,4 +9,5 @@ function getNumber() {
 
     page1.style.display = "none";
     page2.style.display = "block";
+    
 }
