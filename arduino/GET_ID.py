@@ -23,3 +23,8 @@ def get_ID() -> str:
            ID_Aqcuired = True
     return ID
 # output function
+
+print(get_ID())
+
+
+serialcomm.close()
