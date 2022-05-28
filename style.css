@@ -1,19 +1,93 @@
 html, body {
-    background: burlywood;
+    background: rgb(25, 44, 105);
 }
 
 #interface {
     background-color: white;
 }
 
-#mode-btn {
-    float: right;
-}
-
+/*
 .visible {
-    display: block;
-}
+    visibility: visible;
+}*/
 
 .hidden {
     display: none;
+}
+
+
+/*iPad width*/
+#logo {
+    color: white;
+    font-size: 30px;
+    margin-left: 22px;
+    margin-top: 22px;
+}
+
+#interface {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 14vw;
+    align-items: center;
+    height: 75vh;
+}
+
+
+h1 {
+    text-align: center;
+    padding-top: 10vh;
+    font-size: 38px;
+}
+
+#page1 {
+    position: relative;
+}
+
+#error {
+    padding-left: 40px;
+}
+
+#enter-btn {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 25vh;
+    font-size: 18px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#search-box {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 35vh;
+}
+
+#num-input {
+    height: 40px;
+    margin-left: 10px;
+    width: 52vw;
+}
+
+::placeholder {
+    font-size: 18px;
+}
+
+select {
+    width: 50px;
+    font-size: 20px;
+}
+
+optgroup {
+    font-size: 20px;
+}
+
+input[type="text"]
+{
+    font-size:22px;
+    left: 10px;
 }

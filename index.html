@@ -8,37 +8,50 @@
     <script src="https://kit.fontawesome.com/66f14e5dd7.js" crossorigin="anonymous"></script>
     <script src="ui-settings.js"></script>
     <link rel = "stylesheet" href= "style.css">
+    <link rel = "stylesheet" href= "dark-mode.css">
 </head>
 
 <!--Body-->
 <body>
-    <div id = "top">
-        <i class="fa-solid fa-suitcase" id = "logo"></i>
-        <button id = "mode-btn"><i class="fas fa-sun" id = "b-icon"></i></button>
-    </div>
-
-    <div id = "interface">
-        <div id = "page1" class = "visible">
-            <h1>Check In</h1>
-            <span id = "error"></span>
-
-            <div id = "search-box">
-                <select name="country-code" id="country-code">
-                    <option id = "code" data-countryCode="US" value="1" Selected>+1</option>       
-                </select>
-
-                <input id = "num-input" type = "text" placeholder = "Enter phone number">
-            </div>
-            
-            <button id = "enter-btn" onclick = "getNumber()">Enter</button>
-
+    <div id = "ui">
+        <div id = "site-logo">
+            <i class="fa-solid fa-suitcase" id = "logo"></i>
         </div>
 
-        <div id = "page2" class = "hidden">
-            <h1>Luggage Status</h1> <!--Displays luggage and current status-->
-            <!--Traveller info-->
+        <div id = "interface">
+            <div id = "page1" class = "visible">
+                <h1>Status Checker</h1>
 
-            <!--Luggage-->
+                <div id = "search-box">
+                    <select name="country-code" id="country-code">
+                        <optgroup>
+                            <option id = "code" data-countryCode="US" value="1" Selected>+1</option> 
+                        </optgroup>      
+                    </select>
+
+                    <input id = "num-input" type = "text" placeholder = "Enter phone number">
+                </div>
+                
+                <button id = "enter-btn" onclick = "getNumber()">View Status</button>
+
+            </div>
+
+            <div id = "page2" class = "hidden">
+                <h1>Luggage Status</h1> <!--Displays luggage and current status-->
+                <!--Traveller info-->
+                <div id = "profile">
+                    <div id = info>
+                        First Name: <br>
+                        Start: <br>
+                        End: <br>
+                    </div>
+                    <div id = "luggage">
+                        Insert luggage info here
+                    </div>
+                </div>
+
+                <!--Luggage-->
+            </div>
         </div>
     </div>
 </body>
