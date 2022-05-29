@@ -25,9 +25,9 @@ html, body {
 }
 
 #interface {
-    margin-left: 5vw;
-    margin-right: 5vw;
-    margin-top: 14vw;
+    margin: auto;
+    width: 480px;
+    margin-top: 70px;
     align-items: center;
     height: 75vh;
     border-radius: 10px;
@@ -38,23 +38,27 @@ html, body {
     text-align: center;
     padding-top: 10vh;
     font-size: 36px;
-    font-family: "Segoe UI";
+    font-family: Tahoma;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #page1 p {
     text-align: center;
-    margin-top: 40px;
     font-size: 18px;
     font-family: Helvetica;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-top: 18px;
 }
 
 #page2 h1 {
     text-align: center;
     padding-top: 3vh;
     font-size: 38px;
-    font-family: "Segoe UI";
+    font-family: Tahoma;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #page1 {
@@ -69,16 +73,21 @@ html, body {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    margin-top: 15vh;
     font-size: 18px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 15px;
     padding-right: 15px;
-    font-family: "Segoe UI";
+    font-family: Tahoma;
     border-radius: 1px;
     background-color: white;
     opacity: 95%;
+    margin-top: 110px;
+}
+
+#enter-btn:hover {
+    background-color: black;
+    color: white;
 }
 
 #search-box {
@@ -86,7 +95,7 @@ html, body {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    top: 35vh;
+    top: 270px;
 }
 
 #num-input {
@@ -94,6 +103,7 @@ html, body {
     margin-left: 10px;
     width: 52vw;
     border: 1px solid black;
+    width: 220px;
 }
 
 ::placeholder {
@@ -118,6 +128,10 @@ input[type="text"]
     left: 10px;
 }
 
+input {
+    width: 100px;
+}
+
 #prof img {
     border-radius: 12vh;
     width:auto;
@@ -131,18 +145,18 @@ input[type="text"]
 #profile {
     padding-top: 5px;
     padding-left: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 #info {
-    padding-left: 30px;
+    padding-left: 40px;
     font-family: Helvetica;
-    line-height: 1.6;
+    line-height: 1.4;
     font-size: 17px;
 }
 
 h2 {
-    font-family: "Segoe UI";
+    font-family: Tahoma;
 }
 
 #hl {
@@ -153,8 +167,8 @@ h2 {
 
 #luggage {
     padding-left: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .l-info {
@@ -174,5 +188,5 @@ h2 {
 #text {
     font-size: 16px;
     line-height: 1.4;
-    padding-left: 20px;
+    padding-left: 50px;
 }
