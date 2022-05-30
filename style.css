@@ -1,9 +1,9 @@
 html, body {
-    background: rgb(25, 44, 105);
+    background: #4D4C7D;
 }
 
 #interface {
-    background-color: white;
+    background-color: rgb(249, 251, 253);
 }
 
 /*
@@ -25,18 +25,40 @@ html, body {
 }
 
 #interface {
-    margin-left: 5vw;
-    margin-right: 5vw;
-    margin-top: 14vw;
+    margin: auto;
+    width: 480px;
+    margin-top: 70px;
     align-items: center;
     height: 75vh;
+    border-radius: 10px;
 }
 
 
-h1 {
+#page1 h1 {
     text-align: center;
     padding-top: 10vh;
+    font-size: 36px;
+    font-family: Tahoma;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#page1 p {
+    text-align: center;
+    font-size: 18px;
+    font-family: Helvetica;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-top: 18px;
+}
+
+#page2 h1 {
+    text-align: center;
+    padding-top: 3vh;
     font-size: 38px;
+    font-family: Tahoma;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #page1 {
@@ -51,12 +73,21 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    margin-top: 25vh;
     font-size: 18px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 15px;
     padding-right: 15px;
+    font-family: Tahoma;
+    border-radius: 1px;
+    background-color: white;
+    opacity: 95%;
+    margin-top: 110px;
+}
+
+#enter-btn:hover {
+    background-color: black;
+    color: white;
 }
 
 #search-box {
@@ -64,13 +95,15 @@ h1 {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    top: 35vh;
+    top: 270px;
 }
 
 #num-input {
     height: 40px;
     margin-left: 10px;
     width: 52vw;
+    border: 1px solid black;
+    width: 220px;
 }
 
 ::placeholder {
@@ -80,14 +113,80 @@ h1 {
 select {
     width: 50px;
     font-size: 20px;
+    border: 1px solid black;
 }
 
 optgroup {
     font-size: 20px;
 }
 
+
+
 input[type="text"]
 {
-    font-size:22px;
+    font-size: 20px;
     left: 10px;
+}
+
+input {
+    width: 100px;
+}
+
+#prof img {
+    border-radius: 12vh;
+    width:auto;
+    height: 11vh;
+}
+
+#prof {
+    display: flex;
+}
+
+#profile {
+    padding-top: 5px;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+
+#info {
+    padding-left: 40px;
+    font-family: Helvetica;
+    line-height: 1.4;
+    font-size: 17px;
+}
+
+h2 {
+    font-family: Tahoma;
+}
+
+#hl {
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: black;
+}
+
+#luggage {
+    padding-left: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.l-info {
+    display: flex;
+    padding-bottom: 5px;
+}
+
+.l-info i {
+    font-size: 48px;
+    padding-top: 10px;
+}
+
+.l-info {
+    font-family: Helvetica;
+}
+
+#text {
+    font-size: 16px;
+    line-height: 1.4;
+    padding-left: 50px;
 }

@@ -2,13 +2,14 @@
 <html>
 <!--Head-->
 <head>
-    <title>Web app name</title>
+    <title>My Luggage Handler</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/66f14e5dd7.js" crossorigin="anonymous"></script>
     <script src="ui-settings.js"></script>
     <link rel = "stylesheet" href= "style.css">
-    <link rel = "stylesheet" href= "dark-mode.css">
+    <link rel = "stylesheet" href= "media-query.css">
+    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Suitcase_Flat_Icon_Vector.svg/768px-Suitcase_Flat_Icon_Vector.svg.png?20180301083157">
 </head>
 
 <!--Body-->
@@ -20,33 +21,59 @@
 
         <div id = "interface">
             <div id = "page1" class = "visible">
-                <h1>Status Checker</h1>
+                <h1>My Luggage Handler</h1>
+                <p>Enter your phone number below to view your luggage status</p>
+                <div id = "input-search">
+                    <div id = "search-box">
+                        <select name="country-code" id="country-code">
+                            <optgroup>
+                                <option id = "code" data-countryCode="US" value="1" Selected>+1</option> 
+                            </optgroup>      
+                        </select>
 
-                <div id = "search-box">
-                    <select name="country-code" id="country-code">
-                        <optgroup>
-                            <option id = "code" data-countryCode="US" value="1" Selected>+1</option> 
-                        </optgroup>      
-                    </select>
-
-                    <input id = "num-input" type = "text" placeholder = "Enter phone number">
+                        <input id = "num-input" type = "text" placeholder = "Phone number">
+                    </div>
                 </div>
-                
-                <button id = "enter-btn" onclick = "getNumber()">View Status</button>
-
+                    
+                    <button id = "enter-btn" onclick = "getNumber()">View Status</button>
             </div>
 
             <div id = "page2" class = "hidden">
-                <h1>Luggage Status</h1> <!--Displays luggage and current status-->
                 <!--Traveller info-->
                 <div id = "profile">
-                    <div id = info>
-                        First Name: <br>
-                        Start: <br>
-                        End: <br>
+                    <h2>Profile</h2>
+                    <div id = "prof">
+                        <img src = 'https://i.pinimg.com/736x/3e/c8/7b/3ec87b69011badc7a7a9fde570b97427.jpg' />
+                        <div id = "info">
+                            <p>
+                            <b>Name:</b> Jane Doe<br>
+                            <b>Start:</b> IAH<br>
+                            <b>End:</b> LAX<br>
+                            </p>
+                        </div>
                     </div>
-                    <div id = "luggage">
-                        Insert luggage info here
+                </div>
+                <hr id = "hl">
+                <div id = "luggage">
+                    <h2>Luggage Status</h2>
+                    <div id = "list" class = "item">
+                        <div class = "l-info">
+                            <i class="fas fa-suitcase-rolling"></i>
+                            <div id = "text">
+                                <b>ID:</b> a19b82<br>
+                                <b>Location:</b> Station 1 <br>
+                                <b>Status:</b> Delivered
+                            </div>
+                        </div>
+                        <hr>
+                        <div class = "l-info">
+                            <i class="fas fa-suitcase-rolling"></i>
+                            <div id = "text">
+                                <b>ID:</b> y193g2<br>
+                                <b>Location:</b> -- <br>
+                                <b>Status:</b> In Circulation
+                            </div>
+                        </div>
                     </div>
                 </div>
 
